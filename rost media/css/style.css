@@ -1,0 +1,147 @@
+@font-face{
+    font-family: ubunturegular;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+.old_br{
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+.old_br ul{
+    list-style: none;
+}
+header{
+    position: relative;
+}
+.wrapper{
+    margin: 0 auto;
+    overflow: visible;
+    min-width: 980px;
+}
+.fon{
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    height: 592px;
+    left: 0;
+}
+.header_main{
+    position: relative;
+}
+.header_bg{
+    position: absolute;
+    height: 122px;
+    z-index: -5;
+    width: 100%;
+    left: -19px;
+}
+.header_logo{
+    margin:  14px 0 0 320px;
+    display: inline-block;
+}
+.telephon{
+    display: inline-block;
+    float: right;
+    margin: 10px 344px 0 0;
+}
+.telephon p{
+    font-size: medium;
+    font-size: 20px;
+    color: #f0047f;
+    font-family: ubunturegular;
+}
+.telephon p::before{
+    width: 19px;
+    height: 19px;
+    content: "";
+    background-image: url(../img/phone.png);
+    display: inline-block;
+    margin: 0 6px -2px 0;
+}
+.header_nav{
+    display: inline-block;
+    float: right;
+    margin: 43px -204px 0 0;
+}
+.header_nav li{
+float: left;
+margin-left: 19px;
+}
+.header_nav li a{
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: ubunturegular;
+    color: #616161;
+}
+.people{
+    position: relative;
+    display: inline-block;
+    top: 75px;
+    left: 390px;
+}
+.people img{
+    position: absolute;
+}
+.they{
+    position: absolute;
+    z-index: -9;
+}
+.greenH{
+    top: 66px;
+    left: 438px;
+}
+.red{
+    z-index: -20;
+    top: 105px;
+    left: 405px;
+}
+.greenR{
+    z-index: -20;
+    top: 107px;
+    left:299px;
+    animation: greenR 1s linear infinite;
+    transform-origin: 50% 0%;
+}
+@keyframes greenR{
+    0%{
+        transform: scale(1);
+    }
+    10%{
+        transform: scale(0.9);
+    }
+    30%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(0.9);
+    }
+    100%{
+transform: scale(1);
+    }
+}
+.greenRk{
+    z-index: -20;
+    top: 105px;
+    left:228px;
+    animation: greenRk 1s linear infinite;
+    transform-origin: 50% 0%;
+}
+@keyframes greenRk{
+    0%{
+        transform: scale(0.9);
+    }
+    10%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(0.9);
+    }
+    70%{
+        transform: scale(1);
+    }
+    100%{
+transform: scale(0.9);
+    }
+}
